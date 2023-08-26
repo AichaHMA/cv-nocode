@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b1b633b42.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo_Aicha.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>reconversion qualité logiciel</p>
+                <h1>Bonjour,<br> je suis <span>Aicha</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/tianyi-ma-WiONHd_zYI4-unsplash.jpg" width=624px height=811px>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">A propos de moi</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores hic unde excepturi natus placeat deleniti repellat, voluptatum quis fugit dicta, corrupti sed. Officia laborum animi, nemo at dolorum et voluptatem?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('compétences')">Compétences</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Expériences</p>
+                        <p class="tab-links" onclick="opentab('education')">Diplômes et formations</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="compétences">
+                        <ul>
+                            <li><span>Compétence 1</span><br>Description compétence 1</li>
+                            <li><span>Compétence 2</span><br>Description compétence 2</li>
+                            <li><span>Compétence 3</span><br>Description compétence 3</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"  id="experiences">
+                        <ul>
+                            <li><span>Experience 1</span><br>Description Experience 1</li>
+                            <li><span>Experience 2</span><br>Description compétence 2</li>
+                            <li><span>Experience 3</span><br>Description Experience 3</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents"  id="education">
+                        <ul>
+                            <li><span>Ecole 1</span><br>Description Ecole 1</li>
+                            <li><span>Ecole 2</span><br>Description Ecole 2</li>
+                            <li><span>Ecole 3</span><br>Description Ecole 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------portfolio------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed quo perferendis atque ut cupiditate unde libero</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed quo perferendis atque ut cupiditate unde libero</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed quo perferendis atque ut cupiditate unde libero</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>    
+                </div>
+            </div>
+            <a href="#" class="btn">En savoir plus</a>
+        </div>
+    </div>
+    <!-- ---------------------contact------------------- --> 
+    <div id="contact">
+       <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> aicha.hmamou@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 0699254784</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                    </div>
+                    <a href="images/CV_Aicha_HMAMOU.pdf" download class="btn btn2">Télécharger CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Nom" placeholder="Votre Nom" required>
+                        <input type="email" name="Email" placeholder="Votre email" required>
+                        <textarea name="Message" rows="6" placeholder="Votre Message"></textarea>
+                        <button type="submit" class="btn btn2">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©  Crée par  <i class="fa-solid fa-heart"></i> Aicha</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        var side = document.getElementById("sidemenu");
+
+        function openmenu(){
+            side.style.right = "0";
+        }
+        function closemenu(){
+            side.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbybtFAoerihK7ptbiRRJ2X_qPmWVXLAKtxUqX--TSfRzlFeaQ5QsPvGlOgCojmcLuxg9Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>
